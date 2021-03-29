@@ -4,11 +4,8 @@ import java.util.Random;
 
 public class Closet_2 {
 
-    private void merge (int[][] A, int[][] D, int p, int k, int q ){
-                    // ( 점들 배열 , 쌍 저장할 배열, 처음 index, 중간 index, 마지막 index )
-
+    private void merge (int[][] A, int[][] D, int p, int k, int q ){   // ( 점들 배열 , 쌍 저장할 배열, 처음 index, 중간 index, 마지막 index )
         double d = 0; // 최소 거리 담을 변수
-
         int[][] CP_L = new int[2][2]; // S_L ( 왼쪽 ) 에서의 최근접 점의 쌍을 담는 배열
         int[][] CP_R = new int[2][2]; // S_R ( 오른쪽 )에서의 최근접 점의 쌍을 담는 배열
         int[][] CP_C = new int[2][2]; // S_C ( 중간영역 ) 에서의 최근접 점의 쌍을 담는 배열
