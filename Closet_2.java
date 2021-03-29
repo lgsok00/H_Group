@@ -64,11 +64,6 @@ public class Closet_2 {
                 n = a;
             }
         }
-        for (int i = 0; i < 2; i++) {
-            D[i][0] = A[n][0];
-            D[i][1] = A[n][1];
-            n++;
-        }
         return d;
     }
 
