@@ -16,18 +16,18 @@ public class Closet_2 {
         double l = dist(A,CP_L,p,k); // -> 앞 부분의 쌍들 중 최소 거리 저장
         double r = dist(A,CP_R,k+1,q); // -> 뒷 부분의 쌍들 중 최소 거리 저장
 
-        // 조건 : l 과 r 중에 짧은 거리를 d라고 놓는다.
+        // 조건 : l 과 r 중에 짧은 거리를 d라고 가정
         if (l<= r) d = l;
         else d = r;
 
-        // 중간 영역에 속하는 점들 중에 가장 앞에 위치한 x값의 index p에 저장하기
+        // 중간 영역에 속하는 점들 중에 가장 앞에 위치한 x값의 index -> p에 저장하기
         for(int i = 0; i<A.length;i++) {
             if ((A[k][0] - d) <= A[i][0]) {
                 p = i;
                 break;
             }
         }
-        // 중간 영역에 속하는 점들 중에 가장 뒤에 위치한 x값의 index q에 저장하기
+        // 중간 영역에 속하는 점들 중에 가장 뒤에 위치한 x값의 index -> q에 저장하기
         for(int i = A.length-1; i>=0;i--) {
             if ((A[k+1][0] + d) >= A[i][0]) {
                 q = i;
@@ -38,7 +38,7 @@ public class Closet_2 {
         double c=dist (A,CP_C,p,q); // -> 중간 부분의 쌍들 중 최소 거리 저장
 
         // 거리 비교해서 가장 최소거리 좌표 D에 넣어주기 --> 거리 똑같은 건 구별 X
-        if ((l <= r) && (l <= c )) { // l이 가장 작은 경우 배열 CP_L이 최근접 점 쌍이 되므로 D에 저장 !
+        if ((l <= r) && (l <= c )) { // l이 가장 작은 경우
             for (int i=0;i<2;i++){
                 D[i][0]=CP_L[i][0];                D[i][1]=CP_L[i][1];
             }
@@ -55,7 +55,7 @@ public class Closet_2 {
         }
     }
 
-    // 거리 구하기 공식
+    // 거리 구해주는 함수
     private double dist(int[][] A, int[][] D, int p, int q){ // ( 점들 배열 , 쌍 저장할 배열, 처음 index, 마지막 index )
 
         double min=0; // 최소거리를 담을 변수 선언
