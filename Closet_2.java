@@ -58,11 +58,9 @@ public class Closet_2 {
             double x, y;
             x = Math.pow(A[a][0] - A[a + 1][0], 2);
             y = Math.pow(A[a][1] - A[a + 1][1], 2);
-            double min = Math.sqrt(x + y);
-            //int min = (int) dd; // 거리 int형 변수 min에 담았음
+            double min = Math.sqrt(x + y);           
             if (a == p || min < d) {
-                d = min;
-                // System.out.printf(" 최소거리 %d일 때, %d는 ? ", d, a);
+                d = min;                
                 n = a;
             }
         }
