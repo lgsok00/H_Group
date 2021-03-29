@@ -9,7 +9,6 @@ public class Closet_2 {
         int[][] CP_L = new int[2][2]; // S_L ( 왼쪽 ) 에서의 최근접 점의 쌍을 담는 배열
         int[][] CP_R = new int[2][2]; // S_R ( 오른쪽 )에서의 최근접 점의 쌍을 담는 배열
         int[][] CP_C = new int[2][2]; // S_C ( 중간영역 ) 에서의 최근접 점의 쌍을 담는 배열
-
         double l = dist(A,CP_L,p,k); // -> 앞 부분의 쌍들 중 최소 거리 저장
         double r = dist(A,CP_R,k+1,q); // -> 뒷 부분의 쌍들 중 최소 거리 저장
 
@@ -57,17 +56,17 @@ public class Closet_2 {
 
         double min=0; // 최소거리를 담을 변수 선언
         int n=0; // 최소거리를 가질 때의 A 배열의 index 저장할 변수 선언
-
+        
         for ( int a = p; a< q; a++) {
             double x = Math.pow(A[a][0] - A[a + 1][0], 2); // ( x_1 - x_2 ) ^2
             double y = Math.pow(A[a][1] - A[a + 1][1], 2); // ( y_1 - y_2 ) ^2
             double d = Math.sqrt(x + y); // 두 점 거리 d에 저장
-            if (a == p || d < min) { // a가 제일 작을 때 ( 맨 처음 ) 와 min보다 d이 작아질 때
-                min = d;             // min에 d 값 갱신
-                n = a;              // 최소값이 갱신될때 마다 그 때 A 배열의 x좌표 index를 n에 저장
+            if (a == p || d < min) {  // a가 제일 작을 때 ( 맨 처음 ) 와 min보다 d이 작아질 때
+                min = d;              // min에 d 값 갱신
+                n = a;               // 최소값이 갱신될때 마다 그 때 A 배열의 x좌표 index를 n에 저장
             }
         }
-
+        
         /*  위에서 마지막에 저장된 n값이 가장 최소거리를 갖는 A배열의 최근접 점 쌍의 첫번째 x좌표 index 이므로 !
           최근접 점 쌍을 담을 배열 D에 A[n][], A[n+1][] 값 저장 */
         for (int i = 0; i < 2; i++) {
