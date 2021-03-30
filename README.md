@@ -33,7 +33,7 @@ categories: jekyll update
 
 
 ### 4. 자바로 구현하기
-'''
+```java
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Random;
@@ -165,7 +165,7 @@ public class Closet_2 {
         System.out.println();
     }
 }
-'''
+```
 ### 5. 결과
 ![KakaoTalk_20210330_143211809](https://user-images.githubusercontent.com/80325051/112938876-72e0ed80-9165-11eb-8894-24922d6130c8.png)
 
