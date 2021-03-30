@@ -168,8 +168,7 @@ public class Closet_2 {
 {% endhighlight %}
 
 ### 5. 결과
-![Result](https://sn3301files.storage.live.com/y4p4I7GFa0ia4xstgdDb8fujz6UrLGN3mtE9m0tKVrIo6d-CJyGTgZDAtI_IKCzkdeC4mqMdXdbSbB-Ytk83G9gKWE5lZWHLVRhvAdHzFkOWlAMi9_JyBaHmcUXU1wLBiEe-g7QEmIiwGOl2VE8Ci_gt9STzh9M_aWu0Ik9bVGmzrL9X4zBqTE7cTyPd-LXGVVF9vebK-6mekQsn3mlDstaBY_JrmiMErd_fufevGU7VZo/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7(13).png?psid=1&width=985&height=459)  
-
+![Result]![KakaoTalk_20210330_143211809](https://user-images.githubusercontent.com/80325051/112938876-72e0ed80-9165-11eb-8894-24922d6130c8.png)
 
 
 
