@@ -168,7 +168,7 @@ public class Closet_2 {
 {% endhighlight %}
 
 ### 5. 결과
-![Result]![KakaoTalk_20210330_143211809](https://user-images.githubusercontent.com/80325051/112938876-72e0ed80-9165-11eb-8894-24922d6130c8.png)
+![KakaoTalk_20210330_143211809](https://user-images.githubusercontent.com/80325051/112938876-72e0ed80-9165-11eb-8894-24922d6130c8.png)
 
 
 
