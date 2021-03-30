@@ -33,7 +33,7 @@ categories: jekyll update
 
 
 ### 4. 자바로 구현하기
-
+{% endhighlight %}
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Random;
